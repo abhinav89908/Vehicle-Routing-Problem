@@ -149,9 +149,9 @@ from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
 import math
 from flask import Flask, jsonify, request
-from flask_cors import CORS  # Import the CORS module
+# from flask_cors import CORS  # Import the CORS module
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
 @app.route('/')
 def hello_word():
