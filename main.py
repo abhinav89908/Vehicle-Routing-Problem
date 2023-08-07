@@ -173,7 +173,7 @@ def get_vrp_solution(data, manager, routing, solution):
         plan_output = ""
         route_distance = 0
         while not routing.IsEnd(index):
-            plan_output += ' {} -> '.format(manager.IndexToNode(index))
+            plan_output += '{} '.format(manager.IndexToNode(index))
             previous_index = index
             index = solution.Value(routing.NextVar(index))
             route_distance += routing.GetArcCostForVehicle(
